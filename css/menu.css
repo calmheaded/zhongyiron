@@ -1,0 +1,37 @@
+/*********************************************** 横向主导航条 ***********************************************/
+.menu-content{}
+.ddsmoothmenu{height:40px;margin:0 auto; background:url(../images/menudd.jpg);}
+.ddsmoothmenu ul{margin:0 ;padding:0;}
+/*主菜单设置*/
+.ddsmoothmenu ul li{position:relative;display:inline-block;float:left;width:119px;text-align:center; background: url(../images/shu.jpg) right center no-repeat;margin-right:1px;text-align:center;}
+.ddsmoothmenu ul li:hover{color: #000000; background:#A74C2A}
+.ddsmoothmenu ul li a{display:block;height:40px;line-height:40px; font-size:14px;font-family:"微软雅黑"; font-weight:bold;}
+.ddsmoothmenu ul li a span{display:block;padding:0px 15px;}
+/*主菜单连接效果设置*/
+.ddsmoothmenu ul li a:link,.ddsmoothmenu ul li a:visited{color: #fFF;}
+.ddsmoothmenu ul li a:hover{}
+.ddsmoothmenu ul li a:hover span{color:#FFF}
+.ddsmoothmenu ul li a:active{}
+.ddsmoothmenu ul li a:active span{}
+.ddsmoothmenu ul li a.selected{}
+.ddsmoothmenu ul li a.selected span{color:#FFF}
+/*主菜单当前所在页面*/
+.ddsmoothmenu ul li a#menu_selected{}
+.ddsmoothmenu ul li a#menu_selected span{color:#FFF}
+
+/*子集菜单设置*/
+.ddsmoothmenu ul.menulevel{position:absolute;left:0; display:none;visibility:hidden;}
+.ddsmoothmenu ul.menulevel li{background:none;margin:0px;padding:0px;float:none; text-align:center;  }
+.ddsmoothmenu ul.menulevel li a{ background: url(../images/menu_01a.jpg);height:30px;line-height:30px;width:117px;padding:0px 5px;margin:0px;border-right:1px solid #999;border-bottom:1px solid #DFDFDF;border-left:1px solid #CCC; font-weight:normal;}
+/*子集菜单连接效果设置*/
+.ddsmoothmenu ul.menulevel li ul{top:0; }
+.ddsmoothmenu ul.menulevel li a{  width:107px; font-size:13px;}
+.ddsmoothmenu ul.menulevel li a:link,.ddsmoothmenu ul.menulevel li a:visited{color:#fff}
+.ddsmoothmenu ul.menulevel li a:hover{background:#7f0202;color:#fff;font-weight:bold}
+.ddsmoothmenu ul.menulevel li a.selected{background:url(../images/mainmenu.gif) repeat-x left -90px;color:#034fab;font-weight:bold}
+/*下拉箭头*/
+/*阴影*/
+.ddshadow{position:absolute;left:0;top:0;width:0;height:0;background:url(../images/40.png);z-index:1}
+.toplevelshadow{/*opacity:0.8*/}
+* html .ddsmoothmenu{height:1%}/* Holly Hack for IE \*//*Holly Hack for IE7 and below*/
+* html .ddsmoothmenu ul li a{display:inline-block}/*IE6 hack to get sub menu links to behave correctly*/
