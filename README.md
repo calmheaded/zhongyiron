@@ -1,2 +1,0 @@
-# zhongyiron
-jijin
